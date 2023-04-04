@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "fastify": "^4.15.0",
+    "live-server": "^1.2.2",
+    "mysql": "^2.18.1"
+  },
+  "scripts": {
+    "localhost": "live-server"
+  }
+}
