@@ -30,10 +30,6 @@ let url = 'http://127.0.0.1:3000/stock'
     }
   }
 
-
-
-
-
   // async function fillContaine(){
   //   try {
   //     let data = await translateOBJ(fetchstock())
