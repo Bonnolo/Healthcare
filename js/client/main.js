@@ -1,5 +1,5 @@
 let url = 'http://127.0.0.1:3000/stock'
-
+// Get's dbtable on http://127.0.0.1:3000/stock 
   const fetchstock = async () => {
     try {
       let response = await fetch(url);
@@ -30,6 +30,9 @@ let url = 'http://127.0.0.1:3000/stock'
     }
   }
 
+  fillContainer(fetchstock())
+
+  
   // async function fillContaine(){
   //   try {
   //     let data = await translateOBJ(fetchstock())
@@ -39,4 +42,3 @@ let url = 'http://127.0.0.1:3000/stock'
   //   }
   // }
 
-fillContainer(fetchstock())
