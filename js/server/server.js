@@ -41,13 +41,36 @@ const getsql = async (sql) => {
   return data;
 };
 
+const queryFactory = (query) => {
+  return Object.keys(query)
+    .map((key, index) => {
+      const value = Object.values(query)[index];
+
+      switch (key) {
+        case "order_by":
+          return `${key.replace("_", " ")} '${value}'`;
+        case "order":
+          return value;
+        default:
+          return "";
+      }
+    })
+    .join(" ");
+};
+
+// in testing
+
 // Declare a route
 fastify.get("/", async (request, reply) => {
+  const dbQueryParams = queryFactory(request.query);
+
   let data = "aviables routes: /stock ; /solds ; /orders";
-  return data;
+  return dbQueryParams;
 });
 fastify.get("/stock", async (request, reply) => {
-  let data = await getsql(stock);
+  const dbQueryParams = queryFactory(request.query);
+  const sqlString = stock + " " + dbQueryParams;
+  let data = await getsql(sqlString);
   return data;
 });
 
