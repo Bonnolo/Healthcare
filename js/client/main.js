@@ -54,9 +54,3 @@ async function fillContainer(dbtable) {
 
 // running fetch
 fillContainer(fetchdata())
-
-
-
-function renderElement(key, value) {
-  
-}
