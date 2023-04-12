@@ -8,7 +8,7 @@ Requires:
 1. npm install mysql
 2. npm install fastify
 3. Install any "Allow CORS" browser extension (https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf)
-4. Execute healthcare.sql inside database
+4. Execute healthcare.sql inside database (creates tabels with no data)
 
 Only for devs:
 1. npm install nodemon
