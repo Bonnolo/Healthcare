@@ -64,18 +64,19 @@ const queryFactory = (query) => {
 fastify.get("/", async (request, reply) => {
   console.log(request.query);
   const dbQueryParams = queryFactory(request.query);
-  console.log(dbQueryParams)
+  console.log(dbQueryParams);
 
   let data = "aviables routes: /stock ; /solds ; /orders";
   return dbQueryParams;
 });
+// in sviluppo
 
-fastify.get("/stok", async (request, reply) => {
+/* fastify.get("/stok", async (request, reply) => {
   const dbQueryParams = queryFactory(request.query);
   const sqlString = stock + " " + dbQueryParams;
   let data = await getsql(sqlString);
   return data;
-});
+}); */
 
 fastify.get("/stock", async (request, reply) => {
   let data = await getsql(stock);
@@ -84,6 +85,10 @@ fastify.get("/stock", async (request, reply) => {
 
 fastify.get("/orders", async (request, reply) => {
   let data = await getsql(orders);
+  return data;
+});
+fastify.get("/solds", async (request, reply) => {
+  let data = await getsql(solds);
   return data;
 });
 
