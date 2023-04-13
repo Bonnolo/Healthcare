@@ -6,6 +6,7 @@ let orders = "http://127.0.0.1:3000/orders";
 function inserDataLastSold(typeOfClass, typeOfElement, typeOfData, data) {
   let dataValue = Object.values(data);
   for (const data of dataValue) {
+    console.log(data);
     let element = document.createElement(`${typeOfElement}`);
     element.classList.add(`${typeOfClass}`);
     let idSelector = document.querySelector(`${typeOfData}`);
@@ -14,7 +15,7 @@ function inserDataLastSold(typeOfClass, typeOfElement, typeOfData, data) {
                         <p>${data.name}</p>
                         <p>${data.quantity}</p>
                         <p>${data.product_id}</p>
-                        <p>${data.price}€</p>`;
+                        <p>${data.price.toFixed(2)}€</p>`;
   }
 }
 function inserDataStock(typeOfClass, typeOfElement, typeOfData, data) {
@@ -32,8 +33,8 @@ function inserDataStock(typeOfClass, typeOfElement, typeOfData, data) {
                         <p>${data.name}</p>
                         <p>${data.stock}</p>
                         <p>${data.product_id}</p>
-                        <p>${data.buy_price}€</p>
-                        <p>${data.sell_price}€</p>
+                        <p>${data.buy_price.toFixed(2)}€</p>
+                        <p>${data.sell_price.toFixed(2)}€</p>
                         <p>${day}/${month}/${year}</p>`;
   }
 }
@@ -48,11 +49,15 @@ const fetchdata = async (url) => {
   }
 };
 
-async function fillContainer(dbtable) {
+async function fillStock(dbtable) {
   let data = await dbtable;
   inserDataStock("dataStock", "div", "#dataStock", data);
-  /*   inserDataLastSold("data", "div", "#dataSold", data); */
+}
+async function fillLastSold(dbtable) {
+  let data = await dbtable;
+  inserDataLastSold("data", "div", "#dataSold", data);
 }
 
 // running fetch
-fillContainer(fetchdata());
+fillStock(fetchdata(stock));
+fillLastSold(fetchdata(itemsSold));
