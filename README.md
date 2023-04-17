@@ -20,8 +20,9 @@ Only for devs:
 Getting started:
 
 1. Install the required node modules
-2. Open up cmd and run the server.js file
-3. Open up browser
-4. Activate and run CORS extension
-5. Run live server
-6. Done
+2. Open up Xampp and run mysql
+3. Open up cmd and run the server.js file
+4. Open up browser
+5. Activate and run CORS extension
+6. Run live server
+7. Done
