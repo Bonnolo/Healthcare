@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <div>
+        <div style="margin-bottom: 1rem;">
             <img src="./imgs/logo.png" alt="">
         </div>
     </header>
@@ -27,7 +27,7 @@
             <h4>€ Unità</h4>
         </div>
         <!-- iniziano i dati -->
-        <div class="data">
+<!--         <div class="data">
             <p>Pepega</p>
             <p>8</p>
             <p>0000000000001</p>
@@ -50,7 +50,7 @@
             <p>8</p>
             <p>0000000000002</p>
             <p>12.99€</p>
-        </div>
+        </div> -->
 
         <img class="logo" src="./imgs/logo.png" alt="">
     </section>
@@ -65,13 +65,13 @@
                     <img src="./imgs/grafico.png" alt="">
                 </div>
                 <span><button>Visualizza statistiche</button></span>
-                <div id="dataSold" class="block2">
+                <div id="entrateData" class="block2">
                     <h4>Nome</h4>
                     <h4>Data Acquisto</h4>
                     <h4>Q.tà venduta</h4>
                     <h4>Cod.prodotto</h4>
                     <h4>€ Unità</h4>
-                </div>
+<!--                 </div>
                 <div class="dataEntrate">
                     <p>Pepega</p>
                     <p>12/5/2022</p>
@@ -99,7 +99,7 @@
                     <p>5</p>
                     <p>0000000000002</p>
                     <p>12.99€</p>
-                </div>
+                </div> -->
             </div>
             <div id="uscite">
                 <h2>Uscite</h2>
@@ -107,14 +107,14 @@
                     <img src="./imgs/grafico.png" alt="">
                 </div>
                 <span><button>Visualizza statistiche</button></span>
-                <div id="dataOrders" class="block2">
+                <div id="usciteData" class="block2">
                     <h4>Nome</h4>
                     <h4>Data Acquisto</h4>
                     <h4>Q.tà acquistate</h4>
                     <h4>Cod.prodotto</h4>
                     <h4>€ Unità</h4>
                 </div>
-                <div class="dataEntrate">
+<!--                 <div class="dataEntrate">
                     <p>Pepega</p>
                     <p>12/5/2022</p>
                     <p>5</p>
@@ -141,7 +141,7 @@
                     <p>5</p>
                     <p>0000000000002</p>
                     <p>12.99€</p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="stoccaggio">
@@ -155,6 +155,12 @@
                 <h4>€ Unità</h4>
                 <h4>Prezzo acquisto</h4>
                 <h4>Scadenza prodotto</h4>
+            </div>
+            <div class="cont">
+                <p id="stockBar"></p>
+                <div class="lightgray">
+                    <div class="orange"></div>
+                </div>
             </div>
         </div>
     </section>
@@ -170,7 +176,7 @@
             <h4>Cod. prodotto</h4>
         </div>
         <!-- iniziano i dati -->
-        <div class="dataEntrate">
+<!--         <div class="dataEntrate">
             <p>18/5/2022</p>
             <p>Pepega</p>
             <p>8</p>
@@ -197,9 +203,9 @@
             <p>8</p>
             <p>12.99€</p>
             <p>0000000000002</p>
-        </div>
+        </div> -->
     </section>
-    <script src="./js/client/main.js"></script>
+    <script type="module" src="./js/client/main.js"></script>
 </body>
 
 </html>

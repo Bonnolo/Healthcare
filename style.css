@@ -199,6 +199,27 @@ h4 {
 .dataStock:nth-child(2n) {
   background-color: #7e9e64;
 }
+.cont{
+  padding: 10px;
+}
+.cont p{
+  color: black;
+  text-align: center;
+  font-family: "Open Sans Regular";
+  margin-bottom: 0.5rem;
+}
+.lightgray{
+  padding: 2px;
+  background-color: #1c4e7d;
+  border-radius: 25px;
+}
+.orange{
+  background-color: rgb(200, 90, 90);
+  height:24px;
+  border-radius: 25px;
+  color: white;
+  min-width: 8%;
+}
 /* end of section2 */
 
 #section3 {
@@ -207,6 +228,7 @@ h4 {
 header {
   display: none;
 }
+
 
 @media (max-width: 800px) {
   body {
