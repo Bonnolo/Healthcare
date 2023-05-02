@@ -20,6 +20,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+h4{
+  font-family: "Open Sans Semibold";
+  font-size: 0.8rem;
+}
 /* end reset */
 @font-face {
   font-family: "Open Sans Semibold";
@@ -78,9 +82,6 @@ body {
 h2 {
   font-family: "Open Sans Semibold";
 }
-h4 {
-  font-family: "Open Sans Light";
-}
 .logo {
   position: fixed;
   left: 1%;
@@ -107,6 +108,10 @@ h4 {
   border-right: 1px solid black;
   height: 100%;
 }
+.dataEntrate p{
+  margin: 0 5px;
+  font-size: 0.8rem;
+}
 .data {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -116,6 +121,9 @@ h4 {
   border-radius: 10px;
   color: white;
   margin: 5px;
+}
+.data p{
+  font-size: 0.8rem;
 }
 .data:nth-child(2n) {
   background-color: #7e9e64;
@@ -161,6 +169,9 @@ h4 {
   margin-right: 5px;
   margin-left: 5px;
 }
+.block2 h4 {
+  margin: 0 5px;
+}
 .dataEntrate {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -195,6 +206,9 @@ h4 {
   border-radius: 10px;
   color: white;
   margin: 5px;
+}
+.dataStock p{
+  font-size: 0.8rem;
 }
 .dataStock:nth-child(2n) {
   background-color: #7e9e64;
