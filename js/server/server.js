@@ -5,7 +5,7 @@ const fastify = require("fastify")({ logger: true });
 var connection = mysql.createConnection({
   host: "localhost",
   user: "root",
-  password: "",
+  password: "root",
   database: "healthcare",
 });
 
