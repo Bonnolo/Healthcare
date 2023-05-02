@@ -66,10 +66,12 @@ searchInput.addEventListener("keyup", (event) => {
         if (name.includes(searchQuery)) {
             // found name matching search, display it
             nameElement.style.display = "grid";
+            nameElement.style.background = "rgb(200, 90, 90)";
             
         } else {
             // no match, don't display name
             nameElement.style.display = "none";
+            nameElement.style.background = "#417716"
         }
     }
 });
