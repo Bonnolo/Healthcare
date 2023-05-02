@@ -114,6 +114,9 @@ h2 {
   margin-right: 5px;
   margin-left: 5px;
 }
+.block h4{
+  margin: 0 10px;
+}
 #section1 {
   border-right: 1px solid black;
   height: 100%;
