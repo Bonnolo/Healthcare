@@ -79,6 +79,16 @@ body {
   background-color: #d9d9d9;
   font-family: "Open Sans Regular";
 }
+input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 0.5rem;
+  margin: 30px auto;
+  width: 50vw;
+  
+}
 h2 {
   font-family: "Open Sans Semibold";
 }
@@ -262,5 +272,11 @@ header {
   }
   .logo {
     display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  input{
+    max-width: 500px;
   }
 }
